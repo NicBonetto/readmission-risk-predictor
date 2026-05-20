@@ -51,7 +51,7 @@ Key feature engineering decisions informed by EDA:
 - **High-risk drug binary flag dropped** - ~97% prevalence in both groups made it non-discriminative in an ICU setting where these medications are standard of care
 
 ### Model
-Logistic Regression with `class_weight="balanced"` to handle the 5:1 class imbalance between non-readmitted and readmitted patients. Features scaled with `StandardScaler` prior to fitting.
+Logistic Regression with `class_weight="balanced"` to handle the 5:1 class imbalance between non-readmitted and readmitted patients.
 
 ### Evaluation
 Stratified train/test split with `stratify=y` to preserve class balance across splits.
